@@ -1,0 +1,45 @@
+{
+    "name": "danielcsgomes/silex-simple-form",
+    "description": "",
+    "homepage": "https://github.com/danielcsgomes/EventbriteApiConnector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Gomes",
+            "email": "me@danielcsgomes.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "endroid/qrcode": "1.*@dev",
+        "silex/silex": "1.2.*@dev",
+        "symfony/form": "~2.3",
+        "symfony/validator": "~2.3",
+        "symfony/config": "~2.3",
+        "doctrine/dbal": "2.2.*",
+        "silex/web-profiler": "~1.0",
+        "symfony/browser-kit": "~2.3",
+        "symfony/class-loader": "~2.3",
+        "symfony/console": "~2.3",
+        "symfony/css-selector": "~2.3",
+        "symfony/debug": "~2.3",
+        "symfony/finder": "~2.3",
+        "symfony/monolog-bridge": "~2.3",
+        "symfony/process": "~2.3",
+        "symfony/security": "~2.3",
+        "symfony/translation": "~2.3",
+        "symfony/twig-bridge": "~2.3",
+        "igorw/config-service-provider": "1.2.*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}

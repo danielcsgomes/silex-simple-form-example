@@ -1,0 +1,8 @@
+dbs.options:
+    mysql:
+        driver: pdo_mysql
+        host: your_host
+        dbname: your_db_name
+        user: ''
+        password: ''
+        charset: utf8

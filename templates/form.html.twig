@@ -1,0 +1,24 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <div class="container">
+        <form class="form-signin" method="POST">
+            <h1 class="form-signin-heading">elePHPant raffle:</h1>
+
+            {% set messages = app.session.getFlashBag.get('message') %}
+            {% if messages  %}
+            <div class="alert alert-danger">
+                {% for message in messages %}
+                    {{ message|raw }}
+                {% endfor %}
+            </div>
+            {% endif %}
+
+
+            <input type="text" class="form-control" name="form[name]" placeholder="Name" autofocus>
+            <input type="text" class="form-control" name="form[twitter_handler]" placeholder="Twitter handler">
+            {{ form_row(form._token) }}
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        </form>
+    </div>
+{% endblock content %}
