@@ -1,0 +1,15 @@
+memory: 1024
+nfs: true
+
+aws:
+  access_key_id = "YOUR KEY"
+  secret_access_key = "YOUR SECRET"
+  keypair_name = "KEY PAR NAME"
+  region = "us-west-2"
+    security_groups = ["YOUR SECURITY GROUPS"]
+  instance_type = "t1.micro"
+
+  ami = "YOUR AMI IMAGE"
+
+  ssh_username = "YOUR USERNAME"
+  ssh_private_key_path = "/path/to/key.pem"
