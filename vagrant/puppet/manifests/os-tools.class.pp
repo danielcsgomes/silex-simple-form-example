@@ -1,7 +1,7 @@
 class os-tools {
-    $tools = [ "git", "vim", "curl", "nfs-common", "make", "htop", "g++" ]
+    $tools = [ "git", "vim", "curl", "nfs-common", "make", "htop", "g++", "python-software-properties" ]
     package { $tools:
         ensure => latest,
-        require => Exec['apt-update'],
+        before => Exec['apt-update'],
     }
 }

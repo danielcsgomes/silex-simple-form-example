@@ -21,6 +21,5 @@ include apt
 include os-tools
 include groups
 include apache
+include php
 include mysql
-
-class{"php54":}->class{"php":}
